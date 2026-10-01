@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#0e1116">
+  <title>DMI · Workload Admin</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="admin-body">
+  <div class="admin-wrap">
+    <header class="admin-head">
+      <div class="brand-lockup" style="padding:0">
+        <div class="brand-mark">DMI</div><div class="brand-name">WORKLOAD ADMIN<small>Private update console</small></div>
+      </div>
+      <button id="logoutBtn" class="btn small hidden">Log out</button>
+    </header>
+
+    <section id="loginView" class="admin-card login-card">
+      <div class="hero-kicker">Private admin</div>
+      <h1>Update Dashboard</h1>
+      <p>Enter the admin password configured in Netlify. The public dashboard does not link to this page.</p>
+      <div class="admin-field"><label>Admin password</label><input id="passwordInput" type="password" autocomplete="current-password" placeholder="••••••••••"></div>
+      <div style="display:flex;align-items:center;gap:10px;margin-top:14px"><button id="loginBtn" class="btn brand">Unlock admin</button><span id="loginStatus" class="admin-status"></span></div>
+    </section>
+
+    <div id="adminView" class="hidden">
+      <div class="admin-grid">
+        <section class="admin-card">
+          <div class="hero-kicker">Step 1</div><h2>Upload weekly workload</h2>
+          <p>Upload .xlsx, .xls or .csv. Only <b>Ngày</b> and <b>Nội dung</b> are used for the dashboard. Gain, Cải thiện, Task tự giao and Note are ignored.</p>
+          <label class="upload-zone" id="dropZone">
+            <input id="fileInput" type="file" accept=".xlsx,.xls,.csv">
+            <strong>Drop workload file here</strong><span>or click to browse · max recommended size 5 MB</span>
+          </label>
+          <div id="fileMeta" class="admin-meta hidden"><div class="admin-stat"><small>File</small><b id="metaFile">—</b></div><div class="admin-stat"><small>Workdays</small><b id="metaDays">—</b></div><div class="admin-stat"><small>Work items</small><b id="metaTasks">—</b></div></div>
+        </section>
+
+        <section class="admin-card">
+          <div class="hero-kicker">Step 2</div><h2>Update mode</h2>
+          <p>For weekly files, use Merge. Existing dates/tasks are kept and duplicate items are removed automatically.</p>
+          <div class="mode-row"><label class="mode-chip"><input type="radio" name="mode" value="merge" checked>Merge weekly file</label><label class="mode-chip"><input type="radio" name="mode" value="replace">Replace all data</label></div>
+          <div class="admin-note" style="margin-top:14px">Recommended: keep <b>Merge weekly file</b>. A cumulative Excel file also works because duplicates are removed by date + task text.</div>
+          <label class="checkbox" style="margin-top:14px"><input id="practiceToggle" type="checkbox" checked><span>Label Audit Plan / Media Plan items as <b>Practice</b> when importing. Use this while those items are training exercises, not official client audit/planning work.</span></label>
+        </section>
+      </div>
+
+      <section class="admin-card" id="previewCard" style="margin-top:16px">
+        <div class="hero-kicker">Step 3</div><h2>Review before publishing</h2>
+        <p>Task wording and workstream can be corrected here before the dashboard is updated.</p>
+        <div id="previewEmpty" class="admin-note">Upload a file to generate the preview.</div>
+        <div id="previewWrap" class="admin-table-wrap hidden"><table class="admin-table"><thead><tr><th>Date</th><th>Work item</th><th>Workstream</th><th>Project</th><th>Type</th></tr></thead><tbody id="previewBody"></tbody></table></div>
+        <div class="publish-row"><span id="publishStatus" class="admin-status"></span><button id="publishBtn" class="btn brand" disabled>Publish dashboard update</button></div>
+      </section>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="/js/shared.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>
