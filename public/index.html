@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e1116">
+  <title>DMI · Intern Workload Dashboard</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand-lockup">
+        <div class="brand-mark">DMI</div>
+        <div class="brand-name">DETAILERS<br>MOVEMENT<small>Internal report</small></div>
+      </div>
+      <nav class="nav">
+        <a class="active" href="#overview"><i class="dot"></i><span>Overview</span></a>
+        <a href="#workstreams"><i class="dot"></i><span>Workstreams</span></a>
+        <a href="#timeline"><i class="dot"></i><span>Daily workload</span></a>
+      </nav>
+      <div class="side-foot">Workload only · Gain / reflection fields are not displayed.</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="top-title"><strong>Intern Workload Dashboard</strong><span class="internal-badge">Internal</span></div>
+        <div class="actions">
+          <button class="btn" id="refreshBtn">Refresh</button>
+          <button class="btn brand" onclick="window.print()">Print / PDF</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="hero" id="overview">
+          <div class="hero-kicker">DMI · Internship workload</div>
+          <h1>Workload Overview</h1>
+          <p>Task log grouped by workstream, project and workday. Practice exercises are labeled separately from assigned operational work.</p>
+          <div class="period-row"><span class="live-dot"></span><span class="period-pill" id="periodPill">Loading reporting period…</span><span class="status-line" id="updatedText"></span></div>
+        </section>
+
+        <section class="kpi-grid" aria-label="Workload metrics">
+          <article class="kpi"><div class="kpi-label">Logged workdays</div><div class="kpi-value" id="kpiDays">–</div><div class="kpi-meta">Days with recorded tasks</div></article>
+          <article class="kpi"><div class="kpi-label">Work items</div><div class="kpi-value" id="kpiTasks">–</div><div class="kpi-meta">Items from Ngày + Nội dung</div></article>
+          <article class="kpi"><div class="kpi-label">Workstreams</div><div class="kpi-value" id="kpiStreams">–</div><div class="kpi-meta">Grouped for quick review</div></article>
+          <article class="kpi"><div class="kpi-label">Projects / accounts</div><div class="kpi-value" id="kpiProjects">–</div><div class="kpi-meta">Detected from task descriptions</div></article>
+        </section>
+
+        <section class="section">
+          <div class="section-head"><div><h2>Filter workload</h2><p>Use filters to review a specific period, project or workstream.</p></div></div>
+          <div class="panel filters">
+            <div class="field"><input id="searchInput" type="search" placeholder="Search task, client or keyword…"></div>
+            <div class="field"><select id="streamFilter"><option value="">All workstreams</option></select></div>
+            <div class="field"><select id="projectFilter"><option value="">All projects</option></select></div>
+            <div class="field"><select id="periodFilter"><option value="all">All dates</option><option value="7">Latest 7 days</option><option value="14">Latest 14 days</option><option value="30">Latest 30 days</option></select></div>
+            <button class="btn" id="resetFilters">Reset</button>
+          </div>
+        </section>
+
+        <section class="section" id="workstreams">
+          <div class="section-head"><div><h2>Workload distribution</h2><p>Count of recorded work items by category and project.</p></div></div>
+          <div class="dashboard-grid">
+            <article class="panel chart-panel"><h3 style="margin:0;font-size:14px">By workstream</h3><div class="bars" id="workstreamBars"></div></article>
+            <article class="panel chart-panel"><h3 style="margin:0;font-size:14px">By project / account</h3><div class="project-list" id="projectList"></div></article>
+          </div>
+        </section>
+
+        <section class="section" id="timeline">
+          <div class="section-head"><div><h2>Daily workload</h2><p id="resultText">Loading workload…</p></div></div>
+          <div class="timeline" id="timelineList"><div class="panel empty loading">Loading dashboard data…</div></div>
+        </section>
+
+        <div class="footer">DMI · Internal workload dashboard · Data source: weekly uploaded workload file</div>
+      </div>
+    </main>
+  </div>
+  <script src="/js/shared.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-30T22:29:00+07:00",
+  "sourceName": "Intern.xlsx",
+  "entries": [
+    {
+      "date": "2026-09-03",
+      "tasks": [
+        "Quy định bảo mật Tài khoản Facebook cá nhân và Tài khoản quảng cáo (TKQC).",
+        "Quy trình làm việc và phối hợp giữa các phòng ban.",
+        "Bài tập thực hành – cách làm 1 bản Audit Plan và Kế hoạch Truyền thông (Media Plan).",
+        "Quy trình thiết lập chiến dịch quảng cáo (Set campaign)."
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "tasks": [
+        "Thực hành thiết lập chiến dịch và cách tạo biểu mẫu thu thập khách hàng (Lead Form).",
+        "Phân tích chỉ số quảng cáo.",
+        "Tìm hiểu luồng dữ liệu tự động hóa (Automation): Đổ dữ liệu từ Lead Form tự động về hệ thống CRM (GoHighLevel) và Google Sheets."
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "tasks": [
+        "Thực hành đọc và phân tích chỉ số để tối ưu hóa chiến dịch.",
+        "Bài tập thực hành – lập Audit Plan và Media Plan."
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "tasks": [
+        "Kiểm tra chỉ số chiến dịch của các khách hàng.",
+        "Tạo công việc (Task) phối hợp với đội ngũ Content để chỉnh sửa video tối ưu chiến dịch Daniel."
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "tasks": [
+        "Đánh giá, tối ưu và thiết lập chiến dịch cho khách hàng Li Car Guys."
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "tasks": [
+        "Xây dựng tài liệu làm rõ vai trò và phạm vi công việc (Scope of Work) giữa Agency và Client."
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "tasks": [
+        "Tìm nguyên nhân và đánh giá % tỉ lệ xe cũ/ xe mới của Li Car Guy",
+        "Thiết lập chiến dịch Li Car Guys (Lọc tệp danh sách xe để tránh trùng lặp đối tượng xe cũ).",
+        "Tạo task điều chỉnh video dự án Daniel (Yêu cầu: Thêm gói $540/3 năm, thay đổi voice)."
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "tasks": [
+        "Học quy trình thiết lập chiến dịch trên nền tảng Google Ads.",
+        "Setup và Publish camp dự án Daniel."
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "tasks": [
+        "Tiếp tục check camp, check lead có qualified hay không"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "tasks": [
+        "Làm report cho VCC"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "tasks": [
+        "Làm brand guideline template",
+        "Tìm lead của GG_Daniel trên Orbisx",
+        "Set draft camp Li Car Guys"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "tasks": [
+        "Check chỉ số các camp",
+        "Check tin nhắn xe cũ của Li Car Guys",
+        "Learn compare CRM bên mình và cái Kalenix",
+        "Giao task cho CONTENT làm 2 poster CTA LDP"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "tasks": [
+        "Viết content mới cho Daniel",
+        "Tạo slide quy trình cho client vô chấp nhật quyền Fanpage, tkqc",
+        "Chạy lại camp Dynamic M"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "tasks": [
+        "Sửa và điều chỉnh web theo task (policy)",
+        "Post bài Marketing SMS trên GHL",
+        "Học A2P, sửa các Privacy Policy & Terms Conditions",
+        "Gắn automation từ form gg vào sheet của Angel",
+        "Giao task content tối ưu 2 video của Sb"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "tasks": [
+        "Submit A2P, thao tác submit các bước cuối",
+        "Học, làm Apps Script"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "tasks": [
+        "Hiểu cấu trúc website",
+        "Làm landingpage"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "tasks": [
+        "Làm landingpage Licar và Quality (PPF)",
+        "Set darf camp cho VCC",
+        "Test workflow Stage 1",
+        "Check nội dung automation"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "tasks": [
+        "Brief video benchmark Kalenix Dựng Market Pricing bàng html sau đó tải lên netlify.app để view",
+        "Set draft camp Dynamic M: Test video 2 Voice và ko Voice và poster 2 check automation",
+        "Thay Creative Vizion sang template mới",
+        "Collect brief của Kalenix, CRM workflow & AI chat của Max gửi Steve"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "tasks": [
+        "Draft camp video backup Dynamic M",
+        "Draft camp VCC new video PPF",
+        "Thêm phần What do we need vào trong các file report html"
+      ]
+    }
+  ]
+}
